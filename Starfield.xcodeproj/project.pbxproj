@@ -16,6 +16,7 @@
 		1222E5D21BD3F2C20082BC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D01BD3F2C20082BC0D /* LaunchScreen.storyboard */; };
 		1222E5DA1BD4245C0082BC0D /* star.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D91BD4245C0082BC0D /* star.atlas */; settings = {ASSET_TAGS = (); }; };
 		1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5DB1BD4263E0082BC0D /* StarField.swift */; settings = {ASSET_TAGS = (); }; };
+		1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1222E5D31BD3F2C20082BC0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1222E5D91BD4245C0082BC0D /* star.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = star.atlas; sourceTree = "<group>"; };
 		1222E5DB1BD4263E0082BC0D /* StarField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarField.swift; sourceTree = "<group>"; };
+		1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				1222E5C31BD3F2C20082BC0D /* AppDelegate.swift */,
+				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
 				1222E5C51BD3F2C20082BC0D /* GameScene.sks */,
 				1222E5C71BD3F2C20082BC0D /* GameScene.swift */,
-				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
 				1222E5C91BD3F2C20082BC0D /* GameViewController.swift */,
+				1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */,
 				1222E5CB1BD3F2C20082BC0D /* Main.storyboard */,
 				1222E5D91BD4245C0082BC0D /* star.atlas */,
 				1222E5CE1BD3F2C20082BC0D /* Assets.xcassets */,
@@ -107,6 +110,7 @@
 				TargetAttributes = {
 					1222E5BF1BD3F2C20082BC0D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 2VGL7CT34X;
 					};
 				};
 			};
@@ -152,6 +156,7 @@
 				1222E5C81BD3F2C20082BC0D /* GameScene.swift in Sources */,
 				1222E5CA1BD3F2C20082BC0D /* GameViewController.swift in Sources */,
 				1222E5C41BD3F2C20082BC0D /* AppDelegate.swift in Sources */,
+				1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +267,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Starfield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -273,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Starfield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

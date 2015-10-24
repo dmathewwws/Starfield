@@ -29,6 +29,8 @@ class StarField {
     func generateStars() {
         for _ in 1...starCount {
             let star = SKSpriteNode(imageNamed: "star")
+            let randomStarSize = CGFloat(Float.random(5, upper:20))
+            star.size = CGSize(width: randomStarSize, height: randomStarSize)
             let x_pos = CGFloat(arc4random_uniform((UInt32)(xbounds)))
             let y_pos = CGFloat(arc4random_uniform((UInt32)(ybounds)))
             star.position = CGPoint(x: x_pos, y: y_pos)
