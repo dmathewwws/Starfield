@@ -17,6 +17,7 @@
 		1222E5DA1BD4245C0082BC0D /* star.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D91BD4245C0082BC0D /* star.atlas */; settings = {ASSET_TAGS = (); }; };
 		1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5DB1BD4263E0082BC0D /* StarField.swift */; settings = {ASSET_TAGS = (); }; };
 		1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		1244E7F01BDC61640088DF85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1244E7EF1BDC61640088DF85 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1222E5D91BD4245C0082BC0D /* star.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = star.atlas; sourceTree = "<group>"; };
 		1222E5DB1BD4263E0082BC0D /* StarField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarField.swift; sourceTree = "<group>"; };
 		1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float-Extension.swift"; sourceTree = "<group>"; };
+		1244E7EF1BDC61640088DF85 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1244E7F01BDC61640088DF85 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 		1222E5B71BD3F2C10082BC0D = {
 			isa = PBXGroup;
 			children = (
+				1244E7EF1BDC61640088DF85 /* GameKit.framework */,
 				1222E5C21BD3F2C20082BC0D /* Starfield */,
 				1222E5C11BD3F2C20082BC0D /* Products */,
 			);
@@ -111,6 +115,14 @@
 					1222E5BF1BD3F2C20082BC0D = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 2VGL7CT34X;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -199,6 +211,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -221,6 +234,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -243,7 +257,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -258,6 +273,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -273,7 +289,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
 			};
 			name = Debug;
 		};
@@ -287,7 +303,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
 			};
 			name = Release;
 		};
