@@ -18,6 +18,9 @@
 		1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5DB1BD4263E0082BC0D /* StarField.swift */; settings = {ASSET_TAGS = (); }; };
 		1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		1244E7F01BDC61640088DF85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1244E7EF1BDC61640088DF85 /* GameKit.framework */; };
+		126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */ = {isa = PBXBuildFile; fileRef = 126204411BE1DBB600D1973B /* rocket_launcher.caf */; settings = {ASSET_TAGS = (); }; };
+		126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1262043F1BE1DA1000D1973B /* Mister_Lies.caf */; settings = {ASSET_TAGS = (); }; };
+		126204451BE1F85A00D1973B /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126204441BE1F85A00D1973B /* IntroScene.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		1222E5DB1BD4263E0082BC0D /* StarField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarField.swift; sourceTree = "<group>"; };
 		1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float-Extension.swift"; sourceTree = "<group>"; };
 		1244E7EF1BDC61640088DF85 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		1262043F1BE1DA1000D1973B /* Mister_Lies.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mister_Lies.caf; sourceTree = "<group>"; };
+		126204411BE1DBB600D1973B /* rocket_launcher.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rocket_launcher.caf; sourceTree = "<group>"; };
+		126204441BE1F85A00D1973B /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +78,26 @@
 				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
 				1222E5C51BD3F2C20082BC0D /* GameScene.sks */,
 				1222E5C71BD3F2C20082BC0D /* GameScene.swift */,
+				126204441BE1F85A00D1973B /* IntroScene.swift */,
 				1222E5C91BD3F2C20082BC0D /* GameViewController.swift */,
 				1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */,
 				1222E5CB1BD3F2C20082BC0D /* Main.storyboard */,
 				1222E5D91BD4245C0082BC0D /* star.atlas */,
 				1222E5CE1BD3F2C20082BC0D /* Assets.xcassets */,
 				1222E5D01BD3F2C20082BC0D /* LaunchScreen.storyboard */,
+				126204401BE1DA1D00D1973B /* Music */,
 				1222E5D31BD3F2C20082BC0D /* Info.plist */,
 			);
 			path = Starfield;
+			sourceTree = "<group>";
+		};
+		126204401BE1DA1D00D1973B /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				1262043F1BE1DA1000D1973B /* Mister_Lies.caf */,
+				126204411BE1DBB600D1973B /* rocket_launcher.caf */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */,
 				1222E5C61BD3F2C20082BC0D /* GameScene.sks in Resources */,
+				126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */,
 				1222E5D21BD3F2C20082BC0D /* LaunchScreen.storyboard in Resources */,
 				1222E5CF1BD3F2C20082BC0D /* Assets.xcassets in Resources */,
 				1222E5CD1BD3F2C20082BC0D /* Main.storyboard in Resources */,
@@ -165,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */,
+				126204451BE1F85A00D1973B /* IntroScene.swift in Sources */,
 				1222E5C81BD3F2C20082BC0D /* GameScene.swift in Sources */,
 				1222E5CA1BD3F2C20082BC0D /* GameViewController.swift in Sources */,
 				1222E5C41BD3F2C20082BC0D /* AppDelegate.swift in Sources */,
@@ -215,6 +235,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -261,6 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
