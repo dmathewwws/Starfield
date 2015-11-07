@@ -18,14 +18,16 @@ class GameScene: SKScene {
     let deltaTimeConstant:CGFloat = 0.01666
     var deltaTime:CGFloat = 0.01666
     
+    let audioController = AudioController()
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
         self.backgroundColor = SKColor.blackColor()
         
-        starField1 = StarField(count: 6, speed: 30.0, color: SKColor.whiteColor(), xbounds: self.frame.width, ybounds: self.frame.height)
-        starField2 = StarField(count: 20, speed: 10.0, color: SKColor.whiteColor(), xbounds: self.frame.width, ybounds: self.frame.height)
-        starField3 = StarField(count: 50, speed: 10.0, color: SKColor.whiteColor(), xbounds: self.frame.width, ybounds: self.frame.height)
+        starField1 = StarField(count: 15, speed: 30.0, color: SKColor.darkGrayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
+        starField2 = StarField(count: 30, speed: 10.0, color: SKColor.grayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
+        starField3 = StarField(count: 50, speed: 10.0, color: SKColor.lightGrayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
         
         for stars in starField1.starArray {
             addChild(stars)
@@ -38,6 +40,8 @@ class GameScene: SKScene {
         for stars in starField3.starArray {
             addChild(stars)
         }
+        
+        audioController.playMusic()
         
     }
     
@@ -58,9 +62,9 @@ class GameScene: SKScene {
             deltaTime = deltaTimeConstant
         }
         
-        moveSingleLayer(starField1, xDir: 0.2, yDir: -0.8)
-        moveSingleLayer(starField2, xDir: 0, yDir: -0.5)
-        moveSingleLayer(starField3, xDir: 0, yDir: 0)
+        moveSingleLayer(starField1, xDir: 0, yDir: -0.8)
+        moveSingleLayer(starField2, xDir: 0, yDir: -0.8)
+        moveSingleLayer(starField3, xDir: 0, yDir: -0.8)
     }
     
     

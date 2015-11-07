@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1222E5C41BD3F2C20082BC0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5C31BD3F2C20082BC0D /* AppDelegate.swift */; };
-		1222E5C61BD3F2C20082BC0D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5C51BD3F2C20082BC0D /* GameScene.sks */; };
 		1222E5C81BD3F2C20082BC0D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5C71BD3F2C20082BC0D /* GameScene.swift */; };
 		1222E5CA1BD3F2C20082BC0D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5C91BD3F2C20082BC0D /* GameViewController.swift */; };
 		1222E5CD1BD3F2C20082BC0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5CB1BD3F2C20082BC0D /* Main.storyboard */; };
 		1222E5CF1BD3F2C20082BC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5CE1BD3F2C20082BC0D /* Assets.xcassets */; };
 		1222E5D21BD3F2C20082BC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D01BD3F2C20082BC0D /* LaunchScreen.storyboard */; };
-		1222E5DA1BD4245C0082BC0D /* star.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D91BD4245C0082BC0D /* star.atlas */; settings = {ASSET_TAGS = (); }; };
-		1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5DB1BD4263E0082BC0D /* StarField.swift */; settings = {ASSET_TAGS = (); }; };
-		1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		1222E5DA1BD4245C0082BC0D /* star.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1222E5D91BD4245C0082BC0D /* star.atlas */; };
+		1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222E5DB1BD4263E0082BC0D /* StarField.swift */; };
+		1244E7EE1BDC48E20088DF85 /* Float-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */; };
 		1244E7F01BDC61640088DF85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1244E7EF1BDC61640088DF85 /* GameKit.framework */; };
-		126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */ = {isa = PBXBuildFile; fileRef = 126204411BE1DBB600D1973B /* rocket_launcher.caf */; settings = {ASSET_TAGS = (); }; };
-		126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1262043F1BE1DA1000D1973B /* Mister_Lies.caf */; settings = {ASSET_TAGS = (); }; };
-		126204451BE1F85A00D1973B /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126204441BE1F85A00D1973B /* IntroScene.swift */; settings = {ASSET_TAGS = (); }; };
+		126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */ = {isa = PBXBuildFile; fileRef = 126204411BE1DBB600D1973B /* rocket_launcher.caf */; };
+		126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1262043F1BE1DA1000D1973B /* Mister_Lies.caf */; };
+		126204451BE1F85A00D1973B /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126204441BE1F85A00D1973B /* IntroScene.swift */; };
+		12D9DEDF1BE9AE0600CEC9BE /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9DEDE1BE9AE0600CEC9BE /* AudioController.swift */; };
+		12EFAE821BEB0587003FF23C /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFAE811BEB0587003FF23C /* SpaceShip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1222E5C01BD3F2C20082BC0D /* Starfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1222E5C31BD3F2C20082BC0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1222E5C51BD3F2C20082BC0D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		1222E5C71BD3F2C20082BC0D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1222E5C91BD3F2C20082BC0D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1222E5CC1BD3F2C20082BC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		1262043F1BE1DA1000D1973B /* Mister_Lies.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mister_Lies.caf; sourceTree = "<group>"; };
 		126204411BE1DBB600D1973B /* rocket_launcher.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rocket_launcher.caf; sourceTree = "<group>"; };
 		126204441BE1F85A00D1973B /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
+		12D9DEDE1BE9AE0600CEC9BE /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		12EFAE811BEB0587003FF23C /* SpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,11 @@
 			isa = PBXGroup;
 			children = (
 				1222E5C31BD3F2C20082BC0D /* AppDelegate.swift */,
-				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
-				1222E5C51BD3F2C20082BC0D /* GameScene.sks */,
-				1222E5C71BD3F2C20082BC0D /* GameScene.swift */,
 				126204441BE1F85A00D1973B /* IntroScene.swift */,
+				1222E5C71BD3F2C20082BC0D /* GameScene.swift */,
+				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
+				12A60DD81BEEC39100DD216A /* Nodes */,
+				12A60DD91BEEC3AE00DD216A /* Music */,
 				1222E5C91BD3F2C20082BC0D /* GameViewController.swift */,
 				1244E7ED1BDC48E20088DF85 /* Float-Extension.swift */,
 				1222E5CB1BD3F2C20082BC0D /* Main.storyboard */,
@@ -96,6 +99,22 @@
 			children = (
 				1262043F1BE1DA1000D1973B /* Mister_Lies.caf */,
 				126204411BE1DBB600D1973B /* rocket_launcher.caf */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		12A60DD81BEEC39100DD216A /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				12EFAE811BEB0587003FF23C /* SpaceShip.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		12A60DD91BEEC3AE00DD216A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				12D9DEDE1BE9AE0600CEC9BE /* AudioController.swift */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -167,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */,
-				1222E5C61BD3F2C20082BC0D /* GameScene.sks in Resources */,
 				126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */,
 				1222E5D21BD3F2C20082BC0D /* LaunchScreen.storyboard in Resources */,
 				1222E5CF1BD3F2C20082BC0D /* Assets.xcassets in Resources */,
@@ -183,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D9DEDF1BE9AE0600CEC9BE /* AudioController.swift in Sources */,
 				1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */,
+				12EFAE821BEB0587003FF23C /* SpaceShip.swift in Sources */,
 				126204451BE1F85A00D1973B /* IntroScene.swift in Sources */,
 				1222E5C81BD3F2C20082BC0D /* GameScene.swift in Sources */,
 				1222E5CA1BD3F2C20082BC0D /* GameViewController.swift in Sources */,
@@ -311,7 +331,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -325,7 +345,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ToyBoxMedia.Starfield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03150396-aa8d-46f7-8525-7e0120274120";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
