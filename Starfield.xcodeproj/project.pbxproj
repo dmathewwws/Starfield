@@ -20,6 +20,7 @@
 		126204421BE1DBB600D1973B /* rocket_launcher.caf in Resources */ = {isa = PBXBuildFile; fileRef = 126204411BE1DBB600D1973B /* rocket_launcher.caf */; };
 		126204431BE1DBBF00D1973B /* Mister_Lies.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1262043F1BE1DA1000D1973B /* Mister_Lies.caf */; };
 		126204451BE1F85A00D1973B /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126204441BE1F85A00D1973B /* IntroScene.swift */; };
+		12A60DDB1BEED32100DD216A /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A60DDA1BEED32100DD216A /* StarView.swift */; };
 		12D9DEDF1BE9AE0600CEC9BE /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9DEDE1BE9AE0600CEC9BE /* AudioController.swift */; };
 		12EFAE821BEB0587003FF23C /* SpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFAE811BEB0587003FF23C /* SpaceShip.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		1262043F1BE1DA1000D1973B /* Mister_Lies.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mister_Lies.caf; sourceTree = "<group>"; };
 		126204411BE1DBB600D1973B /* rocket_launcher.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rocket_launcher.caf; sourceTree = "<group>"; };
 		126204441BE1F85A00D1973B /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
+		12A60DDA1BEED32100DD216A /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		12D9DEDE1BE9AE0600CEC9BE /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		12EFAE811BEB0587003FF23C /* SpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				1222E5C31BD3F2C20082BC0D /* AppDelegate.swift */,
 				126204441BE1F85A00D1973B /* IntroScene.swift */,
 				1222E5C71BD3F2C20082BC0D /* GameScene.swift */,
+				12A60DDA1BEED32100DD216A /* StarView.swift */,
 				1222E5DB1BD4263E0082BC0D /* StarField.swift */,
 				12A60DD81BEEC39100DD216A /* Nodes */,
 				12A60DD91BEEC3AE00DD216A /* Music */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A60DDB1BEED32100DD216A /* StarView.swift in Sources */,
 				12D9DEDF1BE9AE0600CEC9BE /* AudioController.swift in Sources */,
 				1222E5DC1BD4263E0082BC0D /* StarField.swift in Sources */,
 				12EFAE821BEB0587003FF23C /* SpaceShip.swift in Sources */,

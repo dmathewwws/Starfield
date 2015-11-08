@@ -10,9 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var starField1: StarField!
-    var starField2: StarField!
-    var starField3: StarField!
+    var starView:StarView!
     
     var lastUpdatedTime:NSTimeInterval = 0
     let deltaTimeConstant:CGFloat = 0.01666
@@ -25,19 +23,10 @@ class GameScene: SKScene {
         
         self.backgroundColor = SKColor.blackColor()
         
-        starField1 = StarField(count: 15, speed: 30.0, color: SKColor.darkGrayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
-        starField2 = StarField(count: 30, speed: 10.0, color: SKColor.grayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
-        starField3 = StarField(count: 50, speed: 10.0, color: SKColor.lightGrayColor(), xbounds: self.frame.width, ybounds: self.frame.height)
+        starView = StarView(frame:self.frame)
+        let starsArray = starView.getStars()
         
-        for stars in starField1.starArray {
-            addChild(stars)
-        }
-        
-        for stars in starField2.starArray {
-            addChild(stars)
-        }
-        
-        for stars in starField3.starArray {
+        for stars in starsArray {
             addChild(stars)
         }
         
@@ -62,47 +51,9 @@ class GameScene: SKScene {
             deltaTime = deltaTimeConstant
         }
         
-        moveSingleLayer(starField1, xDir: 0, yDir: -0.8)
-        moveSingleLayer(starField2, xDir: 0, yDir: -0.8)
-        moveSingleLayer(starField3, xDir: 0, yDir: -0.8)
-    }
-    
-    
-    func moveSingleLayer(starField: StarField, xDir:CGFloat, yDir:CGFloat){
-        
-        for star in starField.starArray {
-            let new_x = star.position.x + xDir * starField.starSpeed * deltaTime
-            let new_y = star.position.y + yDir * starField.starSpeed * deltaTime
-            star.position = boundsCheck(CGPoint(x: new_x, y: new_y))
-        }
-    }
-    
-    func boundsCheck(pos:CGPoint) -> CGPoint {
-        
-        var x = pos.x
-        var y = pos.y
-        
-        let xFrame = self.frame.width
-        let yFrame = self.frame.height
+        starView.rootUpdated(deltaTime)
 
-        
-        if x < 0 {
-            x += xFrame
-        }
-        
-        if y < 0 {
-            y += yFrame
-        }
-        
-        if x > xFrame {
-            x -= xFrame
-        }
-        
-        if y > yFrame {
-            y -= yFrame
-        }
-        
-        return CGPoint(x: x, y: y)
     }
     
+        
 }
